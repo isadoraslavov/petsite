@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8CBF9F" />
+  <meta name="description" content="AdotaPet - Plataforma de adoção responsável de cães e gatos. Encontre seu novo melhor amigo e transforme uma vida com amor e responsabilidade." />
+  <title>AdotaPet - Adoção Responsável de Cães e Gatos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="AdotaPet - página inicial">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" role="img" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </span>
+        <span class="logo-text">Adota<span>Pet</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#animais">Animais</a></li>
+          <li><a href="#compatibilidade">Compatibilidade</a></li>
+          <li><a href="#educacao">Educação</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+          <li><a href="#contato" class="nav-cta">Adotar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-badge">Adoção responsável desde 2026</span>
+          <h1 id="hero-title">Encontre seu novo <span class="highlight">melhor amigo</span></h1>
+          <p class="hero-text">Milhares de cães e gatos esperam por um lar cheio de amor. Adotar é um ato de carinho, confiança e esperança — e nós ajudamos você a fazer isso com responsabilidade.</p>
+          <div class="hero-actions">
+            <a href="#animais" class="btn btn-primary">Ver animais</a>
+            <a href="#processo" class="btn btn-outline">Como funciona</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>+500</dt><dd>Adoções realizadas</dd></div>
+            <div><dt>12</dt><dd>ONGs parceiras</dd></div>
+            <div><dt>100%</dt><dd>Amor garantido</dd></div>
+          </dl>
+        </div>
+        <div class="hero-media">
+          <img src="img/hero.png" alt="Um cão golden retriever e um gato cinza sentados lado a lado ao ar livre" class="hero-img" width="640" height="640" />
+          <div class="hero-float hero-float-1" aria-hidden="true">Vacinados e castrados</div>
+          <div class="hero-float hero-float-2" aria-hidden="true">Prontos para amar</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ANIMAIS ================= -->
+    <section class="section" id="animais" aria-labelledby="animais-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Nossos amigos</span>
+          <h2 id="animais-title">Conheça os animais para adoção</h2>
+          <p class="section-sub">Use os filtros e a busca para encontrar o companheiro ideal para o seu perfil.</p>
+        </div>
+
+        <div class="filters" role="search">
+          <div class="search-field">
+            <label for="search" class="sr-only">Buscar por nome, raça ou cidade</label>
+            <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="search" placeholder="Buscar por nome, raça ou cidade..." autocomplete="off" />
+          </div>
+          <div class="filter-group">
+            <label for="filter-species">Espécie</label>
+            <select id="filter-species">
+              <option value="">Todas</option>
+              <option value="cachorro">Cães</option>
+              <option value="gato">Gatos</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-size">Porte</label>
+            <select id="filter-size">
+              <option value="">Todos</option>
+              <option value="pequeno">Pequeno</option>
+              <option value="medio">Médio</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-age">Idade</label>
+            <select id="filter-age">
+              <option value="">Todas</option>
+              <option value="filhote">Filhote (até 1 ano)</option>
+              <option value="adulto">Adulto (1 a 7 anos)</option>
+              <option value="idoso">Idoso (8+ anos)</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-temperament">Temperamento</label>
+            <select id="filter-temperament">
+              <option value="">Todos</option>
+              <option value="calmo">Calmo</option>
+              <option value="brincalhao">Brincalhão</option>
+              <option value="sociavel">Sociável</option>
+              <option value="independente">Independente</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="results-count" id="results-count" role="status" aria-live="polite"></p>
+        <div class="cards-grid" id="animals-grid"></div>
+        <p class="no-results" id="no-results" hidden>Nenhum animal encontrado com esses filtros. Tente ajustar sua busca.</p>
+      </div>
+    </section>
+
+    <!-- ================= COMPATIBILIDADE ================= -->
+    <section class="section section-alt" id="compatibilidade" aria-labelledby="compat-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Teste de compatibilidade</span>
+          <h2 id="compat-title">Qual pet combina com você?</h2>
+          <p class="section-sub">Responda cinco perguntas rápidas e descubra qual dos nossos amigos mais se encaixa no seu estilo de vida.</p>
+        </div>
+        <div class="quiz-card" id="compat-quiz">
+          <form id="compat-form" novalidate>
+            <fieldset>
+              <legend>1. Onde você mora?</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="moradia" value="apartamento" required /><span>Apartamento</span></label>
+                <label class="option"><input type="radio" name="moradia" value="casa" /><span>Casa com quintal</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>2. Você tem crianças em casa?</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="criancas" value="sim" required /><span>Sim</span></label>
+                <label class="option"><input type="radio" name="criancas" value="nao" /><span>Não</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>3. Já possui outro animal?</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="outroPet" value="sim" required /><span>Sim</span></label>
+                <label class="option"><input type="radio" name="outroPet" value="nao" /><span>Não</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>4. Você trabalha fora durante o dia?</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="trabalha" value="sim" required /><span>Sim, passo o dia fora</span></label>
+                <label class="option"><input type="radio" name="trabalha" value="nao" /><span>Não, fico bastante em casa</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>5. Você prefere um animal...</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="energia" value="calmo" required /><span>Calmo e tranquilo</span></label>
+                <label class="option"><input type="radio" name="energia" value="ativo" /><span>Ativo e brincalhão</span></label>
+              </div>
+            </fieldset>
+            <p class="form-error" id="compat-error" role="alert" hidden>Por favor, responda todas as perguntas para ver o resultado.</p>
+            <button type="submit" class="btn btn-primary">Descobrir meu match</button>
+          </form>
+          <div class="quiz-result" id="compat-result" hidden aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCAÇÃO ================= -->
+    <section class="section" id="educacao" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Adoção consciente</span>
+          <h2 id="edu-title">Prepare-se para receber seu novo amigo</h2>
+          <p class="section-sub">Informação é o primeiro passo para uma adoção feliz e responsável.</p>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <span class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+            </span>
+            <h3>Prepare a casa</h3>
+            <p>Remova plantas tóxicas, fios soltos e objetos pequenos. Reserve um cantinho seguro com cama, comedouro e bebedouro.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <h3>Custos da adoção</h3>
+            <p>Considere alimentação, vacinas, vermífugos, castração e eventuais consultas veterinárias no orçamento mensal.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 6 5c2 0 3 1.5 3 1.5S10 5 12 5s3 1.5 3 1.5S16 5 18 5c4 0 5.5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+            </span>
+            <h3>Primeiros cuidados</h3>
+            <p>Leve ao veterinário nos primeiros dias, mantenha a carteira de vacinação em dia e ofereça alimentação adequada à idade.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <h3>Responsabilidades</h3>
+            <p>Um pet é um compromisso de 10 a 20 anos. Envolve tempo, carinho, saúde, passeios e muita paciência.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </span>
+            <h3>Dicas de adaptação</h3>
+            <p>Dê tempo ao animal para se ambientar, mantenha uma rotina, respeite o espaço dele e reforce comportamentos positivos.</p>
+          </article>
+          <article class="edu-card">
+            <span class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+            </span>
+            <h3>Identificação</h3>
+            <p>Use coleira com plaquinha de identificação e considere o microchip para localizar seu pet caso ele se perca.</p>
+          </article>
+        </div>
+
+        <!-- Quiz educativo -->
+        <div class="edu-quiz" id="edu-quiz">
+          <div class="edu-quiz-head">
+            <h3>Quiz: você está pronto para adotar?</h3>
+            <p>Teste seus conhecimentos sobre adoção responsável.</p>
+          </div>
+          <div id="edu-quiz-body"></div>
+          <div class="edu-quiz-progress"><span id="edu-quiz-status" aria-live="polite"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESSO ================= -->
+    <section class="section section-alt" id="processo" aria-labelledby="processo-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Passo a passo</span>
+          <h2 id="processo-title">Como funciona a adoção</h2>
+          <p class="section-sub">Um processo transparente e cuidadoso para garantir o bem-estar de todos.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-step" aria-hidden="true">1</span>
+            <div class="timeline-content">
+              <h3>Escolha do animal</h3>
+              <p>Navegue pelo catálogo e encontre o pet que combina com você.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-step" aria-hidden="true">2</span>
+            <div class="timeline-content">
+              <h3>Formulário</h3>
+              <p>Preencha o formulário de solicitação com seus dados e informações de moradia.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-step" aria-hidden="true">3</span>
+            <div class="timeline-content">
+              <h3>Entrevista</h3>
+              <p>Conversamos com você para entender sua rotina e expectativas.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-step" aria-hidden="true">4</span>
+            <div class="timeline-content">
+              <h3>Visita</h3>
+              <p>Você conhece o animal pessoalmente e verificamos o ambiente.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-step" aria-hidden="true">5</span>
+            <div class="timeline-content">
+              <h3>Aprovação</h3>
+              <p>Após a análise, aprovamos a adoção e assinamos o termo de responsabilidade.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-step" aria-hidden="true">6</span>
+            <div class="timeline-content">
+              <h3>Adoção</h3>
+              <p>Seu novo amigo vai para casa! Continuamos acompanhando a adaptação.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PARCEIROS ================= -->
+    <section class="section" id="parceiros" aria-labelledby="parceiros-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Juntos por eles</span>
+          <h2 id="parceiros-title">ONGs e abrigos parceiros</h2>
+          <p class="section-sub">Organizações sérias que cuidam com amor dos animais até encontrarem um lar.</p>
+        </div>
+        <div class="partners-grid" id="partners-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section section-alt" id="contato" aria-labelledby="contato-title">
+      <div class="container contact-inner">
+        <div class="contact-info">
+          <span class="eyebrow">Fale com a gente</span>
+          <h2 id="contato-title">Solicite uma adoção</h2>
+          <p>Preencha o formulário e nossa equipe entrará em contato para dar continuidade ao processo de adoção responsável.</p>
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(11) 4002-8922</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+              <span>contato@adotapet.com.br</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Rua dos Animais, 123 - São Paulo, SP</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required aria-required="true" />
+            <span class="field-error" data-error-for="nome"></span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required aria-required="true" />
+              <span class="field-error" data-error-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" required aria-required="true" placeholder="(00) 00000-0000" />
+              <span class="field-error" data-error-for="telefone"></span>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" required aria-required="true" />
+              <span class="field-error" data-error-for="cidade"></span>
+            </div>
+            <div class="field">
+              <label for="moradia">Tipo de moradia</label>
+              <select id="moradia" name="moradia" required aria-required="true">
+                <option value="">Selecione</option>
+                <option value="casa">Casa</option>
+                <option value="casa-quintal">Casa com quintal</option>
+                <option value="apartamento">Apartamento</option>
+              </select>
+              <span class="field-error" data-error-for="moradia"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="animal-interesse">Animal de interesse (opcional)</label>
+            <input type="text" id="animal-interesse" name="animal-interesse" />
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+            <span class="field-error" data-error-for="mensagem"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar solicitação</button>
+          <p class="form-success" id="contact-success" role="status" hidden>Solicitação enviada com sucesso! Em breve entraremos em contato.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo logo-light" aria-label="AdotaPet - página inicial">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </span>
+          <span class="logo-text">Adota<span>Pet</span></span>
+        </a>
+        <p>Conectando corações e patinhas com adoções responsáveis, transparência e muito amor.</p>
+        <div class="social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram do AdotaPet"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Facebook do AdotaPet"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube do AdotaPet"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Links rápidos">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#animais">Animais</a></li>
+          <li><a href="#compatibilidade">Compatibilidade</a></li>
+          <li><a href="#educacao">Educação</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-hours">
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Segunda a sexta: 9h às 18h</li>
+          <li>Sábado: 9h às 13h</li>
+          <li>Domingo: fechado</li>
+        </ul>
+        <p class="footer-contact">contato@adotapet.com.br<br />(11) 4002-8922</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> AdotaPet. Todos os direitos reservados. Feito com carinho para quem ama os animais.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal" id="animal-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" hidden>
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-box" role="document">
+      <button class="modal-close" data-close-modal aria-label="Fechar detalhes do animal">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
